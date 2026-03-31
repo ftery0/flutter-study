@@ -9,14 +9,14 @@ class WidgetBasicsScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(------
-      // AppBar단 타이틀 바------
-      appBar: AppB
+    return Scaffold(
+      // AppBar: 타이틀 바
+      appBar: AppBar(
         backgroundColor: Theme.of(context).colorScheme.inversePrimary,
         title: const Text('위젯 기초'),
       ),
-----      // body: 화면의 본문 영역------
-      body: SingleChildScrolew(  // 스크롤 가능하게
+      // body: 화면의 본문 영역
+      body: SingleChildScrollView(  // 스크롤 가능하게
         padding: const EdgeInsets.all(16),  // 사방에 16px 여백
         child: Column(  // 세로로 쌓기
           crossAxisAlignment: CrossAxisAlignment.start,  // 왼쪽 정렬
